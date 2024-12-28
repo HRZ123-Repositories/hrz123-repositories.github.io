@@ -1,2 +1,2 @@
-# hrz123.github.io
+# HRZ123's website
 Hello! This is my website! Nothing here yet...
