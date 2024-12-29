@@ -22,6 +22,7 @@
     </style>
     <script type="text/javascript">
         import { BskyAgent } from '@atproto/api';
+        import { agent } from "~/lib/api";
 
         async function login() {
             const identifier = document.getElementById('identifier').value;
@@ -37,9 +38,27 @@
                     password: btoa(password)  // Encode the password
                 });
                 alert('Login successful!');
+                fetchFeeds();
             } catch (error) {
                 alert('Login failed: ' + error.message);
             }
+        }
+
+        async function fetchFeeds() {
+            const feeds = await agent.app.bsky.unspecced.getPopularFeedGenerators({
+                limit: 10,
+            });
+
+            const feedsContainer = document.createElement('div');
+            feedsContainer.innerHTML = `
+                <div class="container mx-auto">
+                    <h1 class="font-bold text-xl my-4">Top Feeds</h1>
+                    <ul>
+                        ${feeds.data.feeds.map(feed => `<li key="${feed.displayName}">${feed.displayName}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            document.getElementById('content').appendChild(feedsContainer);
         }
     </script>
 </head>
