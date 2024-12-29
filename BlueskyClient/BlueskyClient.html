@@ -20,9 +20,25 @@
             margin-top: 20px;
         }
     </style>
-    <script type="text/javascript">
-        import { BskyAgent } from '@atproto/api';
-        import { agent } from "~/lib/api";
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Bluesky Client</h1>
+        </div>
+        <div id="content">
+            <label for="identifier">Identifier:</label>
+            <input type="text" id="identifier">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    <script type="module">
+        import { BskyAgent } from 'https://cdn.skypack.dev/@atproto/api';
+        import { agent } from "./path/to/your/lib/api";  // Update the path as needed
 
         async function login() {
             const identifier = document.getElementById('identifier').value;
@@ -61,21 +77,5 @@
             document.getElementById('content').appendChild(feedsContainer);
         }
     </script>
-</head>
-<body>
-    <div id="container">
-        <div id="header">
-            <h1>Bluesky Client</h1>
-        </div>
-        <div id="content">
-            <label for="identifier">Identifier:</label>
-            <input type="text" id="identifier">
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password">
-            <br>
-            <button onclick="login()">Login</button>
-        </div>
-    </div>
 </body>
 </html>
