@@ -24,6 +24,7 @@
         import { BskyAgent } from '@atproto/api';
 
         async function login() {
+            const identifier = document.getElementById('identifier').value;
             const password = document.getElementById('password').value;
 
             const agent = new BskyAgent({
@@ -32,7 +33,7 @@
 
             try {
                 await agent.login({
-                    identifier: 'handle.example.com',
+                    identifier: identifier,
                     password: btoa(password)  // Encode the password
                 });
                 alert('Login successful!');
@@ -48,8 +49,12 @@
             <h1>Bluesky Client</h1>
         </div>
         <div id="content">
+            <label for="identifier">Identifier:</label>
+            <input type="text" id="identifier">
+            <br>
             <label for="password">Password:</label>
             <input type="password" id="password">
+            <br>
             <button onclick="login()">Login</button>
         </div>
     </div>
