@@ -1,41 +1,56 @@
 <!DOCTYPE HTML>
-<strong>HRZ123's website</strong>
-<button onclick="document.location='index.html'" >Home</button>
-<button onclick="document.location='about.html'">About</button>
-<form action="https://www.google.com/search" class="searchform" style="margin-bottom:410px" method="get" name="searchform" target="_blank">
-<input name="sitesearch" type="hidden" value="">
-<input autocomplete="on" class="form-control search" name="q" placeholder="Search HRZ123's site" required="required"  type="text" style="margin-bottom:383px">
-<button class="button" type="submit">Search</button>
-</form>
-<style>
-button {
-  background-color: orange;
-}
-button {
-  padding-top: 1px;
-  padding-right: 5px;
-  padding-bottom: 1px;
-  padding-left: 5px;
-}
-input {
-  font-family: "Lucida Console", "Courier", sans-serif;
-}
-button {
-  border-right: 2px solid red;
-  border-radius: 5px;
-  border-left: 2px solid blue;
-  border-top: 2px solid green;
-  border-bottom: 2px solid yellow;
-  border-width: 6px;
-  font-family: "Lucida Console", "Courier", sans-serif;
-}
-}
-.row {
-  white-space: nowrap;
-}
-
-.row>div {
-  width: 300px;
-  display: inline-block;
-}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRZ123's Website</title>
+    <style>
+        button {
+            background-color: orange;
+            padding-top: 1px;
+            padding-right: 5px;
+            padding-bottom: 1px;
+            padding-left: 5px;
+            border-right: 2px solid red;
+            border-radius: 5px;
+            border-left: 2px solid blue;
+            border-top: 2px solid green;
+            border-bottom: 2px solid yellow;
+            border-width: 6px;
+            font-family: "Lucida Console", "Courier", sans-serif;
+        }
+        input {
+            font-family: "Lucida Console", "Courier", sans-serif;
+        }
+        .row {
+            white-space: nowrap;
+        }
+        .row > div {
+            width: 300px;
+            display: inline-block;
+        }
+        .button-icon {
+            background-image: url('store.png');
+            background-size: cover;
+            width: 31px;
+            height: 31px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <strong>HRZ123's website</strong>
+    <button onclick="document.location='index.html'">Home</button>
+    <button onclick="document.location='about.html'">About</button>
+    <button onclick="document.location='store.html'">
+        <span class="button-icon"></span> Store
+    </button>
+    <form action="https://www.google.com/search" class="searchform" style="margin-bottom:410px" method="get" name="searchform" target="_blank">
+        <input name="sitesearch" type="hidden" value="">
+        <input autocomplete="on" class="form-control search" name="q" placeholder="Search HRZ123's site" required="required" type="text" style="margin-bottom:383px">
+        <button class="button" type="submit">Search</button>
+    </form>
+</body>
+</html>
