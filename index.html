@@ -3,63 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRZ123's Website</title>
+    <title>Donate - HRZ123's Website</title>
     <style>
-        .nav-bar {
-            display: flex;
-            align-items: center;
-            gap: 5px; /* Add some space between buttons */
-        }
-        button {
-            background-image: url('skeuomorphicbutton.png');
-            background-size: cover; /* Crop and fit the background image to the button size */
-            color: white; /* Set the text color to white */
-            width: 150px; /* Fixed width for all buttons */
-            height: 25px; /* Fixed height for all buttons */
-            padding: 0; /* Remove default padding */
-            border: none; /* Remove the border */
-            border-radius: 5px;
-            font-family: "Lucida Console", "Courier", sans-serif;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-        input {
-            font-family: "Lucida Console", "Courier", sans-serif;
-        }
-        .button-icon {
-            background-image: url('gofundme.png');
-            background-size: cover;
-            width: 15px; /* Scale the icon down */
-            height: 15px; /* Scale the icon down */
+        .donate-button {
             display: inline-block;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        .searchform input[type="text"] {
-            height: 25px; /* Match the button height */
-            box-sizing: border-box; /* Ensure padding doesn't affect height */
-        }
-        .searchform button {
-            width: 150px; /* Fixed width for all buttons */
-            height: 25px; /* Fixed height for all buttons */
-            box-sizing: border-box; /* Ensure padding doesn't affect height */
+            background-image: url('gofundme_button.png');
+            background-size: contain; /* Ensure the entire image fits within the button */
+            background-repeat: no-repeat;
+            width: 150px; /* Adjust the width as needed */
+            height: 50px; /* Adjust the height as needed */
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <strong>HRZ123's website</strong>
-    <div class="nav-bar">
-        <button onclick="document.location='index.html'">Home</button>
-        <button onclick="document.location='about.html'">About</button>
-        <button onclick="document.location='donate.html'">
-            <span class="button-icon"></span> Donate!
-        </button>
-        <form action="https://oldgoogle.neocities.org/2012-search?" class="searchform" method="get" name="searchform" target="_blank">
-            <input name="sitesearch" type="hidden" value="">
-            <input autocomplete="on" class="form-control search" name="q" placeholder="Search HRZ123's site" required="required" type="text">
-            <button class="button" type="submit">Search</button>
-        </form>
-    </div>
+    <h1>Support Us</h1>
+    <p>Your donations help us keep the website running and support our projects.</p>
+
+    <!-- GoFundMe Donate Button -->
+    <a href="https://www.gofundme.com/f/YOUR_CAMPAIGN_ID" target="_blank">
+        <div class="donate-button"></div>
+    </a>
+
+    <!-- Add more content as needed -->
 </body>
 </html>
