@@ -12,11 +12,11 @@
         }
         button {
             background-image: url('skeuomorphicbutton.png');
-            background-size: contain; /* Ensure the entire image fits within the button */
+            background-size: cover; /* Ensure the entire image fits within the button */
             background-repeat: no-repeat;
             color: white; /* Set the text color to white */
             width: 150px; /* Fixed width for all buttons */
-            height: 25px; /* Fixed height for all buttons */
+            height: 50px; /* Fixed height for all buttons */
             padding: 0; /* Remove default padding */
             border: none; /* Remove the border */
             border-radius: 5px;
@@ -31,22 +31,36 @@
         }
         .button-icon {
             background-image: url('gofundme.png');
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
-            width: 25px; /* Scale the icon size */
-            height: 25px; /* Scale the icon size */
+            width: 15px; /* Scale the icon down */
+            height: 15px; /* Scale the icon down */
             display: inline-block;
             vertical-align: middle;
             margin-right: 5px;
         }
+        .searchform {
+            display: inline-flex;
+            align-items: center;
+        }
         .searchform input[type="text"] {
-            height: 25px; /* Match the button height */
+            height: 50px; /* Match the button height */
             box-sizing: border-box; /* Ensure padding doesn't affect height */
+            margin-right: 5px; /* Add some space between input and button */
         }
         .searchform button {
             width: 150px; /* Fixed width for all buttons */
-            height: 25px; /* Fixed height for all buttons */
+            height: 50px; /* Fixed height for all buttons */
             box-sizing: border-box; /* Ensure padding doesn't affect height */
+            background-image: url('skeuomorphicbutton.png');
+            background-size: cover; /* Ensure the entire image fits within the button */
+            background-repeat: no-repeat;
+            color: white; /* Set the text color to white */
+            border: none; /* Remove the border */
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
