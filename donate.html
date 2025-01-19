@@ -7,8 +7,9 @@
     <style>
         .donate-button {
             display: inline-block;
-            background-image: url('gofundme_donate.png');
-            background-size: cover;
+            background-image: url('gofundme_button.png');
+            background-size: contain; /* Ensure the entire image fits within the button */
+            background-repeat: no-repeat;
             width: 150px; /* Adjust the width as needed */
             height: 50px; /* Adjust the height as needed */
             border: none;
@@ -17,7 +18,9 @@
     </style>
 </head>
 <body>
-    <h1>Donate!</h1>
+    <h1>Support Us</h1>
+    <p>Your donations help us keep the website running and support our projects.</p>
+
     <!-- GoFundMe Donate Button -->
     <a href="https://www.gofundme.com/f/YOUR_CAMPAIGN_ID" target="_blank">
         <div class="donate-button"></div>
