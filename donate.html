@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate - HRZ123's Website</title>
     <style>
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Add some space between buttons */
+        }
+        button {
+            background-image: url('skeuomorphicbutton.png');
+            background-size: cover; /* Ensure the entire image fits within the button */
+            background-position: center; /* Center the background image */
+            color: white; /* Set the text color to white */
+            width: 150px; /* Fixed width for all buttons */
+            height: 15px; /* Fixed height for all buttons */
+            padding: 0; /* Remove default padding */
+            border: none; /* Remove the border */
+            border-radius: 5px;
+            font-family: "Lucida Console", "Courier", sans-serif;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px; /* Add some space between buttons */
+        }
+        input {
+            font-family: "Lucida Console", "Courier", sans-serif;
+        }
+        .button-icon {
+            background-image: url('gofundme.png');
+            background-size: cover;
+            background-position: center;
+            width: 25px; /* Scale the icon size */
+            height: 15px; /* Scale the icon size */
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .searchform {
+            display: inline-flex;
+            align-items: center;
+        }
+        .searchform input[type="text"] {
+            height: 15px; /* Match the button height */
+            box-sizing: border-box; /* Ensure padding doesn't affect height */
+            margin-right: 5px; /* Add some space between input and button */
+        }
+        .searchform button {
+            width: 150px; /* Fixed width for all buttons */
+            height: 15px; /* Fixed height for all buttons */
+            box-sizing: border-box; /* Ensure padding doesn't affect height */
+            background-image: url('skeuomorphicbutton.png');
+            background-size: cover; /* Ensure the entire image fits within the button */
+            background-position: center; /* Center the background image */
+            color: white; /* Set the text color to white */
+            border: none; /* Remove the border */
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
         .donate-button {
             display: inline-block;
             background-image: url('gofundme_button.png');
@@ -18,6 +75,20 @@
     </style>
 </head>
 <body>
+    <strong>HRZ123's website</strong>
+    <div class="nav-bar">
+        <button onclick="document.location='index.html'">Home</button>
+        <button onclick="document.location='about.html'">About</button>
+        <button onclick="document.location='donate.html'">
+            <span class="button-icon"></span> Donate!
+        </button>
+        <form action="https://oldgoogle.neocities.org/2012-search?" class="searchform" method="get" name="searchform" target="_blank">
+            <input name="sitesearch" type="hidden" value="">
+            <input autocomplete="on" class="form-control search" name="q" placeholder="Search Google" required="required" type="text">
+            <button class="button" type="submit">Search</button>
+        </form>
+    </div>
+
     <h1>Support Us</h1>
     <p>Your donations help us keep the website running and support our projects.</p>
 
@@ -25,7 +96,5 @@
     <a href="https://www.gofundme.com/f/YOUR_CAMPAIGN_ID" target="_blank">
         <div class="donate-button"></div>
     </a>
-
-    <!-- Add more content as needed -->
 </body>
 </html>
