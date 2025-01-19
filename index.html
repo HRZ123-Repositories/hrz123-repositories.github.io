@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRZ123's Website</title>
     <style>
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Add some space between buttons */
+        }
         button {
             background-image: url('skeuomorphicbutton.png');
             background-size: cover; /* Crop and fit the background image to the button size */
@@ -18,17 +23,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin-right: 5px; /* Add some space between buttons */
         }
         input {
             font-family: "Lucida Console", "Courier", sans-serif;
-        }
-        .row {
-            white-space: nowrap;
-        }
-        .row > div {
-            width: 300px;
-            display: inline-block;
         }
         .button-icon {
             background-image: url('gofundme.png');
@@ -38,10 +35,6 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 5px;
-        }
-        .searchform {
-            display: inline-block;
-            vertical-align: top;
         }
         .searchform input[type="text"] {
             height: 25px; /* Match the button height */
@@ -56,15 +49,17 @@
 </head>
 <body>
     <strong>HRZ123's website</strong>
-    <button onclick="document.location='index.html'">Home</button>
-    <button onclick="document.location='about.html'">About</button>
-    <button onclick="document.location='donate.html'">
-        <span class="button-icon"></span> Donate!
-    </button>
-    <form action="https://oldgoogle.neocities.org/2012-search?" class="searchform" method="get" name="searchform" target="_blank">
-        <input name="sitesearch" type="hidden" value="">
-        <input autocomplete="on" class="form-control search" name="q" placeholder="Search HRZ123's site" required="required" type="text">
-        <button class="button" type="submit">Search</button>
-    </form>
+    <div class="nav-bar">
+        <button onclick="document.location='index.html'">Home</button>
+        <button onclick="document.location='about.html'">About</button>
+        <button onclick="document.location='donate.html'">
+            <span class="button-icon"></span> Donate!
+        </button>
+        <form action="https://oldgoogle.neocities.org/2012-search?" class="searchform" method="get" name="searchform" target="_blank">
+            <input name="sitesearch" type="hidden" value="">
+            <input autocomplete="on" class="form-control search" name="q" placeholder="Search HRZ123's site" required="required" type="text">
+            <button class="button" type="submit">Search</button>
+        </form>
+    </div>
 </body>
 </html>
