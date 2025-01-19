@@ -9,13 +9,15 @@
             background-image: url('skeuomorphicbutton.png');
             background-size: cover; /* Crop and fit the background image to the button size */
             color: white; /* Set the text color to white */
-            padding-top: 1px;
-            padding-right: 4px;
-            padding-bottom: 1px;
-            padding-left: 5px;
+            width: 150px; /* Fixed width for all buttons */
+            height: 50px; /* Fixed height for all buttons */
+            padding: 0; /* Remove default padding */
             border: none; /* Remove the border */
             border-radius: 5px;
             font-family: "Lucida Console", "Courier", sans-serif;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         input {
             font-family: "Lucida Console", "Courier", sans-serif;
@@ -41,11 +43,12 @@
             vertical-align: top;
         }
         .searchform input[type="text"] {
-            height: 31px; /* Adjust to match button height */
+            height: 50px; /* Match the button height */
             box-sizing: border-box; /* Ensure padding doesn't affect height */
         }
         .searchform button {
-            height: 31px; /* Adjust to match button height */
+            width: 150px; /* Fixed width for all buttons */
+            height: 50px; /* Fixed height for all buttons */
             box-sizing: border-box; /* Ensure padding doesn't affect height */
         }
     </style>
