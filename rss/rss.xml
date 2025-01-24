@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>My RSS Feed</title>
+        <link>https://hrz123-repositories.github.io/rss/</link>
+        <description>Latest updates from my GitHub Pages</description>
+        <item>
+            <title>Update 1</title>
+            <link>https://hrz123-repositories.github.io/rss/update1</link>
+            <description>Description of update 1</description>
+            <pubDate>Mon, 24 Jan 2025 22:36:02 +0000</pubDate>
+        </item>
+        <item>
+            <title>Update 2</title>
+            <link>https://hrz123-repositories.github.io/rss/update2</link>
+            <description>Description of update 2</description>
+            <pubDate>Tue, 25 Jan 2025 22:36:02 +0000</pubDate>
+        </item>
+    </channel>
+</rss>
